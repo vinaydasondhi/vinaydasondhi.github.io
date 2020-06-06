@@ -1,0 +1,58 @@
+:root {
+    --Black: #0B0C10;
+    --Gray: #1F2833;
+    --Light-gray: #C5C6C7;
+    --Toquoise-green: #66FCF1;
+    --Darker-Toquoise-green:#45829A;
+  }
+body{
+    background-color: var(--Darker-Toquoise-green);
+}
+.sticky{
+    position: sticky;
+    top:0;
+}
+
+nav{
+    color: var(--Light-gray);
+}
+nav > a:hover{
+    color: var(--Toquoise-green);
+}
+.name{
+    color: var(--Light-gray);
+}
+
+.bg-1c{
+    background-color: #0B0C10; /* Black */
+}
+.bg-2c{
+    background-color: #1F2833; /* Gray */
+}
+.bg-3c{
+    background-color: #C5C6C7; /* Light gray */
+}
+.bg-4c{
+    background-color: #66FCF1; /* Toquoise green */
+}
+.bg-5c{
+    background-color: #45829A; /* Darker Toquoise green */
+}
+.col-0{
+    color:#fff;
+}
+.col-1{
+    color: #0B0C10; /* Black */
+}
+.col-2{
+    color: #1F2833; /* Gray */
+}
+.col-3{
+    color: #C5C6C7; /* Light gray */
+}
+.col-4{
+    color: #66FCF1; /* Toquoise green */
+}
+.col-5{
+    color: #45829A; /* Darker Toquoise green */
+}
