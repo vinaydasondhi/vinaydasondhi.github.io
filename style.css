@@ -5,6 +5,9 @@
     --Toquoise-green: #66FCF1;
     --Darker-Toquoise-green:#45829A;
   }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--Darker-Toquoise-green);
 }
@@ -14,7 +17,8 @@ body{
 }
 
 nav{
-    color: var(--Light-gray);
+    /* color: var(--Light-gray); */
+    color:#fff;
 }
 nav > a:hover{
     color: var(--Toquoise-green);
