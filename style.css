@@ -9,8 +9,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: var(--Darker-Toquoise-green);
+    /* background-color: var(--Darker-Toquoise-green); */
+    background-image: url('img/Photo-by-Harley-Davidson-on-Unsplash.jpg');
+    background-attachment: fixed;
+    background-size: cover;
 }
+
 .sticky{
     position: sticky;
     top:0;
@@ -41,6 +45,9 @@ nav > a:hover{
 }
 .bg-5c{
     background-color: #45829A; /* Darker Toquoise green */
+}
+.bg-op{
+    background-color: rgba(22, 18, 12, 0.534);    
 }
 .col-0{
     color:#fff;
