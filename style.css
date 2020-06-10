@@ -30,7 +30,9 @@ nav > a:hover{
 .name{
     color: var(--Light-gray);
 }
-
+.bg-overlay{
+    background:rgba(102, 252, 242, 0.364);
+}
 .bg-1c{
     background-color: #0B0C10; /* Black */
 }
@@ -47,7 +49,7 @@ nav > a:hover{
     background-color: #45829A; /* Darker Toquoise green */
 }
 .bg-op{
-    background-color: rgba(22, 18, 12, 0.534);    
+    background-color: rgba(22, 18, 12, 0.634);    
 }
 .col-0{
     color:#fff;
