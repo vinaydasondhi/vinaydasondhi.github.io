@@ -1,159 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-     
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+            rel="stylesheet"
+        />
 
-    <title>Document</title>
-</head>
-<body>
-    <!-- header starts here -->
-    <header class="text-gray-700 body-font bg-1c sticky">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl name">Vinay Dasondhi</span>
-          </a>
-          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-            <a href="#" class="mr-5 ">Home</a>
-            <a href="#gallery" class="mr-5 ">Gallery</a>
-            <a href="#about"class="mr-5 ">About</a>
-            <!-- <a class="mr-5 "></a> -->
-          </nav>
-          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a href="https://www.facebook.com/vinay.dasondhi" target="_blank" class="text-gray-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a href="https://twitter.com/dasondhivinay" target="_blank" class="ml-3 text-gray-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/vinaysphotography09/" target="_blank" class="ml-3 text-gray-500">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-            <a href="https://linkedin.com/in/vinay-dasondhi-b39673180" target="_blank" class="ml-3 text-gray-500">
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-              </svg>
-            </a>
-          </span>
-        </div>
-    </header>
-    <!-- header ends here -->
+        <link rel="stylesheet" href="style.css" />
 
-    <!-- Slider starts here -->
-    <section class="text-gray-700 body-font bg-overlay">
-      <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-        <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center bg-op" style="padding: 20px 20px 20px 20px;">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 col-4">Vinay Photography
-          </h1>
-          <p class="mb-8 leading-relaxed col-0">A budding name in the world of photography. On the way to capture the mesmerizing beauty of life through tiny lenses. At Vinay photography aka focusclick, we put our efforts in inscribing the emotions of a moment into pictures.</p>
-        </div>
-        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6" >
-          <img class="object-cover object-center rounded" alt="Vinay Photgraphy" src="img/vinay-photography-logo.jpg" > <!-- 720x600 -->
-        </div>
-      </div>
-    </section>
-    <!-- style="border:3px solid black;border-radius:7px" -->
-    <!-- Slider ends here -->
-
-    <!-- Gallery statrs here -->
-    <section class="text-gray-700 body-font bg-2c" id="gallery">
-        <div class="container px-5 py-24 mx-auto flex flex-wrap">
-          <div class="flex w-full mb-20 flex-wrap">
-            <h1 class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4 col-4">See Some Of Our Clicks</h1>
-            <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base col-3">In photography there is a reality so subltle that it becomes more real than reality. Photography is a way of feeling, of touching, of loving. What you have caught on film is captured forever... It remembers little things, long after you have forgotten everything.</p>
-          </div>
-          <div class="flex flex-wrap md:-m-2 -m-1">
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://source.unsplash.com/500x300/?dog">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://source.unsplash.com/501x301/?flower">
-              </div>
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://source.unsplash.com/600x360/?toy">
-              </div>
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- header starts here -->
+        <header
+            class="text-gray-700 body-font bg-1c sticky"
+            style="background: #000;"
+        >
+            <div
+                class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+            >
+                <a
+                    class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+                >
+                    <img
+                        src="/img/vinay-photography-logo-2.jpg"
+                        width="50"
+                        alt=""
+                    />
+                    <span class="ml-3 text-xl name">Vinay Photography</span>
+                </a>
+                <nav
+                    class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+                >
+                    <a href="#" class="mr-5">Home</a>
+                    <a href="#gallery" class="mr-5">Gallery</a>
+                    <a href="#about" class="mr-5">About</a>
+                    <!-- <a class="mr-5 "></a> -->
+                </nav>
+                <span
+                    class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+                >
+                    <a
+                        href="https://www.facebook.com/vinay.dasondhi"
+                        target="_blank"
+                        class="text-gray-500"
+                    >
+                        <svg
+                            fill="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-5 h-5"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://twitter.com/dasondhivinay"
+                        target="_blank"
+                        class="ml-3 text-gray-500"
+                    >
+                        <svg
+                            fill="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-5 h-5"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/vinaysphotography09/"
+                        target="_blank"
+                        class="ml-3 text-gray-500"
+                    >
+                        <svg
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-5 h-5"
+                            viewBox="0 0 24 24"
+                        >
+                            <rect
+                                width="20"
+                                height="20"
+                                x="2"
+                                y="2"
+                                rx="5"
+                                ry="5"
+                            ></rect>
+                            <path
+                                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/vinay-dasondhi-b39673180 "
+                        target="_blank"
+                        class="ml-3 text-gray-500"
+                    >
+                        <svg
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="0"
+                            class="w-5 h-5"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                            ></path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
             </div>
-            <div class="flex flex-wrap w-1/2">
-              <div class="md:p-2 p-1 w-full">
-                <img alt="gallery" class="w-full h-full object-cover object-center block" src="https://source.unsplash.com/601x361/?rain">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://source.unsplash.com/502x302/?fruit">
-              </div>
-              <div class="md:p-2 p-1 w-1/2">
-                <img alt="gallery" class="w-full object-cover h-full object-center block" src="https://source.unsplash.com/503x30/?mountain">
-              </div>
+        </header>
+        <!-- header ends here -->
+
+        <!-- Slider starts here -->
+        <section class="text-gray-700 body-font bg-overlay">
+            <div
+                class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+            >
+                <div
+                    class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center bg-op"
+                    style="padding: 20px 20px 20px 20px;"
+                >
+                    <h1
+                        class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 col-4"
+                    >
+                        Vinay Photography
+                    </h1>
+                    <p class="mb-8 leading-relaxed col-0">
+                        A budding name in the world of photography. On the way
+                        to capture the mesmerizing beauty of life through tiny
+                        lenses. At Vinay photography aka focusclick, we put our
+                        efforts in inscribing the emotions of a moment into
+                        pictures.
+                    </p>
+                </div>
+                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                    <img
+                        class="object-cover object-center rounded"
+                        alt="Vinay Photgraphy"
+                        src="img/vinay-photography-logo.jpg"
+                    />
+                    <!-- 720x600 -->
+                </div>
             </div>
-          </div>
-        </div>
-      </section>
-    <!-- Gellery ends here -->
+        </section>
+        <!-- style="border:3px solid black;border-radius:7px" -->
+        <!-- Slider ends here -->
 
-    <!-- About starts here -->
-    <section class="text-gray-700 body-font" id="about">
-      <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-        <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="https://source.unsplash.com/720x600/?couple">
-        <div class="text-center lg:w-2/3 w-full bg-op">
-          <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 col-4">Microdosing synth tattooed vexillologist</h1>
-          <p class="mb-8 leading-relaxed col-0">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
-        </div>
-      </div>
-    </section>
-    <!-- About ends here -->
+        <!-- Gallery statrs here -->
+        <section class="text-gray-700 body-font bg-2c" id="gallery">
+            <div
+                class="container px-5 py-24 mx-auto flex flex-wrap"
+                style="position: initial;"
+            >
+                <div class="flex w-full mb-20 flex-wrap">
+                    <h1
+                        class="sm:text-3xl text-2xl font-medium title-font text-gray-900 lg:w-1/3 lg:mb-0 mb-4 col-4"
+                    >
+                        See Some Of Our Clicks
+                    </h1>
+                    <p
+                        class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-base col-3"
+                    >
+                        In photography there is a reality so subtle that it
+                        becomes more real than reality. Photography is a way of
+                        feeling, of touching, of loving. What you have caught on
+                        film is captured forever... It remembers little things,
+                        long after you have forgotten everything.
+                    </p>
+                </div>
+                <div class="flex flex-wrap md:-m-2 -m-1">
+                    <div class="flex flex-wrap w-1/2">
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img
+                                alt="gallery"
+                                class="w-full object-cover h-full object-center block"
+                                src="img/gallery/vinay-photography-01.jpg"
+                            />
+                            <!--500x300-->
+                        </div>
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img
+                                alt="gallery"
+                                class="w-full object-cover h-full object-center block"
+                                src="img/gallery/vinay-photography-02.jpg"
+                            />
+                            <!--501x301-->
+                        </div>
+                        <div class="md:p-2 p-1 w-full">
+                            <img
+                                alt="gallery"
+                                class="w-full h-full object-cover object-center block"
+                                src="img/gallery/vinay-photography-03.jpeg"
+                            />
+                            <!--600x300-->
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap w-1/2">
+                        <div class="md:p-2 p-1 w-full">
+                            <img
+                                alt="gallery"
+                                class="w-full h-full object-cover object-center block"
+                                src="img/gallery/vinay-photography-04.jpg"
+                            />
+                            <!--601x301-->
+                        </div>
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img
+                                alt="gallery"
+                                class="w-full object-cover h-full object-center block"
+                                src="img/gallery/vinay-photography-05.jpg"
+                            />
+                            <!--502x302-->
+                        </div>
+                        <div class="md:p-2 p-1 w-1/2">
+                            <img
+                                alt="gallery"
+                                class="w-full object-cover h-full object-center block"
+                                src="img/gallery/vinay-photography-06.jpeg"
+                            />
+                            <!--502x302-->
+                        </div>
+                    </div>
+                </div>
 
-    <!-- footer starts here -->
-    <footer class="text-gray-700 body-font bg-1c col-4">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-            </svg>
-            <span class="ml-3 text-xl name">Vinay Dasondhi</span>
-          </a>
-          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2020 Vinay Photgraphy —
-            <a href="https://twitter.com/dasondhivinay" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@Dasondhivinay</a>
-          </p>
-          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a href="https://www.facebook.com/vinay.dasondhi" target="_blank" class="text-gray-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a href="https://twitter.com/dasondhivinay" target="_blank" class="ml-3 text-gray-500">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a href="https://www.instagram.com/vinaysphotography09/" target="_blank" class="ml-3 text-gray-500">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-            <a href="https://linkedin.com/in/vinay-dasondhi-b39673180" target="_blank" class="ml-3 text-gray-500">
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-              </svg>
-            </a>
-          </span>
-        </div>
-      </footer>
+                <div
+                    style="
+                        padding: 40px 0 40px 0;
+                        width: 80%;
+                        margin: auto;
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: -80px;
+                    "
+                >
+                    <a
+                        href="#gallery"
+                        class="bg-4c col-1"
+                        style="
+                            padding: 10px 30px;
+                            border-radius: 5px;
+                            font-size: 5 rem;
+                            font-weight: 600;
+                        "
+                        >View More</a
+                    >
+                </div>
+            </div>
+        </section>
+        <!-- Gellery ends here -->
 
-</body>
+        <!-- About starts here -->
+        <section class="text-gray-700 body-font" id="about">
+            <div
+                class="container mx-auto flex px-5 py-24 items-center justify-center flex-col"
+            >
+                <img
+                    class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded"
+                    alt="Vinay Dasondhi"
+                    src="img/gallery/vinay-dasondhi.jpg"
+                />
+                <!--720x600-->
+                <div class="text-center lg:w-2/3 w-full bg-op">
+                    <h1
+                        class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 col-4"
+                    >
+                        Vinay Dasondhi
+                    </h1>
+                    <p class="mb-8 leading-relaxed col-0">
+                        Meggings kinfolk echo park stumptown DIY, kale chips
+                        beard jianbing tousled. Chambray dreamcatcher trust
+                        fund, kitsch vice godard disrupt ramps hexagon mustache
+                        umami snackwave tilde chillwave ugh. Pour-over
+                        meditation PBR&amp;B pickled ennui celiac mlkshk freegan
+                        photo booth af fingerstache pitchfork.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- About ends here -->
+
+        <!-- footer starts here -->
+        <footer class="text-gray-700 body-font bg-1c col-4">
+            <div
+                class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+            >
+                <a
+                    class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900"
+                >
+                    <img
+                        src="/img/vinay-photography-logo-2.jpg"
+                        width="50"
+                        alt=""
+                    />
+                    <span class="ml-3 text-xl name">Vinay Photography</span>
+                </a>
+                <p
+                    class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"
+                >
+                    © <span id="year"></span> Vinay Photography —
+                    <a
+                        href="https://twitter.com/dasondhivinay"
+                        class="text-gray-600 ml-1"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >@Dasondhivinay</a
+                    >
+                </p>
+                <span
+                    class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+                >
+                    <a
+                        href="https://www.facebook.com/vinay.dasondhi"
+                        target="_blank"
+                        class="text-gray-500"
+                    >
+                        <svg
+                            fill="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-5 h-5"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://twitter.com/dasondhivinay"
+                        target="_blank"
+                        class="ml-3 text-gray-500"
+                    >
+                        <svg
+                            fill="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-5 h-5"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/vinaysphotography09/"
+                        target="_blank"
+                        class="ml-3 text-gray-500"
+                    >
+                        <svg
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            class="w-5 h-5"
+                            viewBox="0 0 24 24"
+                        >
+                            <rect
+                                width="20"
+                                height="20"
+                                x="2"
+                                y="2"
+                                rx="5"
+                                ry="5"
+                            ></rect>
+                            <path
+                                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                            ></path>
+                        </svg>
+                    </a>
+                    <a
+                        href="https://linkedin.com/in/vinay-dasondhi-b39673180"
+                        target="_blank"
+                        class="ml-3 text-gray-500"
+                    >
+                        <svg
+                            fill="currentColor"
+                            stroke="currentColor"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="0"
+                            class="w-5 h-5"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                            ></path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </footer>
+        <script>
+            document.getElementById(
+                "year"
+            ).textContent = new Date().getFullYear();
+        </script>
+    </body>
 </html>
