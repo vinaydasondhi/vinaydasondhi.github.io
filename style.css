@@ -1,71 +1,87 @@
 :root {
-    --Black: #0B0C10;
-    --Gray: #1F2833;
-    --Light-gray: #C5C6C7;
-    --Toquoise-green: #66FCF1;
-    --Darker-Toquoise-green:#45829A;
-  }
-html{
+    --Black: #0b0c10;
+    --Gray: #1f2833;
+    --Light-gray: #c5c6c7;
+    --Toquoise-green: #66fcf1;
+    --Darker-Toquoise-green: #45829a;
+}
+html {
     scroll-behavior: smooth;
 }
-body{
+body {
     /* background-color: var(--Darker-Toquoise-green); */
-    background-image: url('img/Photo-by-Harley-Davidson-on-Unsplash.jpg');
+    background-image: url("img/Photo-by-Harley-Davidson-on-Unsplash.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
 
-.sticky{
+.sticky {
     position: sticky;
-    top:0;
+    top: 0;
 }
 
-nav{
-    /* color: var(--Light-gray); */
-    color:#fff;
+nav {
+    color: #fff;
 }
-nav > a:hover{
-    color: var(--Toquoise-green);
+nav > a{
+    padding:0 5px;
+    font-weight: 500;
+    vertical-align: middle;
 }
-.name{
+nav > a:hover {
+    color: var(--Toquoise-green);    
+}
+.name {
     color: var(--Light-gray);
 }
-.bg-overlay{
-    background:rgba(102, 252, 242, 0.364);
+.bg-overlay {
+    background: rgba(102, 252, 242, 0.364);
 }
-.bg-1c{
-    background-color: #0B0C10; /* Black */
+.bg-1c {
+    background-color: #0b0c10; /* Black */
 }
-.bg-2c{
-    background-color: #1F2833; /* Gray */
+.bg-2c {
+    background-color: #1f2833; /* Gray */
 }
-.bg-3c{
-    background-color: #C5C6C7; /* Light gray */
+.bg-3c {
+    background-color: #c5c6c7; /* Light gray */
 }
-.bg-4c{
-    background-color: #66FCF1; /* Toquoise green */
+.bg-4c {
+    background-color: #66fcf1; /* Toquoise green */
 }
-.bg-5c{
-    background-color: #45829A; /* Darker Toquoise green */
+.bg-5c {
+    background-color: #45829a; /* Darker Toquoise green */
 }
-.bg-op{
-    background-color: rgba(22, 18, 12, 0.634);    
+.bg-op {
+    background-color: rgba(22, 18, 12, 0.634);
 }
-.col-0{
-    color:#fff;
+.col-0 {
+    color: #fff;
 }
-.col-1{
-    color: #0B0C10; /* Black */
+.col-1 {
+    color: #0b0c10; /* Black */
 }
-.col-2{
-    color: #1F2833; /* Gray */
+.col-2 {
+    color: #1f2833; /* Gray */
 }
-.col-3{
-    color: #C5C6C7; /* Light gray */
+.col-3 {
+    color: #c5c6c7; /* Light gray */
 }
-.col-4{
-    color: #66FCF1; /* Toquoise green */
+.col-4 {
+    color: #66fcf1; /* Toquoise green */
 }
-.col-5{
-    color: #45829A; /* Darker Toquoise green */
+.col-5 {
+    color: #45829a; /* Darker Toquoise green */
+}
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: #000;
+    color: #fff;
+    font-size: 1 rem;
+    /* position: absolute;
+    left:45%;
+    top:100%; */
+    /* width:10%;
+    margin:auto; */
 }
