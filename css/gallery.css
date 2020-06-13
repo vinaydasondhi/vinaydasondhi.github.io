@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+}
+body{
+    font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    background-color: #000;
+}
+html {
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+/* gallery styling code starts here */
+.container1 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#images-wrapper {
+    line-height: 0;
+    -webkit-column-count: 4;
+    -webkit-column-gap: 0px;
+    -moz-column-count: 4;
+    -moz-column-gap: 0px;
+    column-count: 4;
+    column-gap: 4px;
+}
+#images-wrapper img {
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 4px;
+}
+#images-wrapper {
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+}
+.modal {
+  display: none; /*Hidden by default*/
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: flex;
+  justify-content: center;
+  display: none;
+  color: #66fcf1;
+}
+.modal-content {
+    display: inline-block;
+    background-color: #1f2833;
+    padding: 20px 20px 40px 20px;
+    border: 3px solid #fff;
+    border-radius:10px;
+    min-width: 25%;
+    width: auto;
+    height: 80vh;
+    margin: auto;
+}
+.row{
+    display: flex;
+    vertical-align: middle;
+    width: 100%;
+    margin: auto;
+}
+.content-center{
+    justify-content: center;
+}
+.content-space-between{
+    justify-content: space-between;
+}
+.modal-content h1{
+    padding: 0px;
+    margin:10px 0 0 0;
+}
+.modal-content span{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.modal img{
+    min-width: 200px;
+    max-height: 450px;
+    border: 3px solid #fff;
+    border-radius: 6px;
+}
+hr{
+    color: #66fcf1;
+}
+
+/* Media query for gallery */
+@media (max-width: 1000px) {
+    #images-wrapper {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
+@media (max-width: 800px) {
+    #images-wrapper {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+@media (max-width: 400px) {
+    #images-wrapper {
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1;
+    }
+}
+
+/* gallery styling code ends here */
+
+/* CSS for NAVBAR */
+svg{
+    height: 20px;
+    color: #c5c6c7;
+    margin: 5px;
+}
+header#navbar{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 50px;
+    border-bottom: 2px solid #66fcf1;
+    position: sticky;
+    top:0;
+    background: #000;
+}
+header#navbar span{
+    margin-left: .75rem;
+    font-size: 1.25rem;
+    color: #c5c6c7;
+    font-weight: 500;
+}
+header#navbar nav a{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 5px;
+    margin: 0 .625rem;
+    color: #fff;
+}
+header#navbar nav > a:hover {
+    color: #66fcf1;
+}
+@media (max-width: 800px) {
+    header#navbar{
+        justify-content:center;
+    }
+    .navbar-items{
+        width: 99%;
+        margin: auto;
+        display: flex;
+        justify-content:center;
+        text-align: center;
+    }
+    header#navbar a,header#navbar nav{
+        margin-bottom: 1rem;
+    }
+}
