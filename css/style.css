@@ -9,8 +9,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    /* background-color: var(--Darker-Toquoise-green); */
-    background-image: url("img/Photo-by-Harley-Davidson-on-Unsplash.jpg");
+    background-image: url("../img/Photo-by-Harley-Davidson-on-Unsplash.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
@@ -23,13 +22,13 @@ body {
 nav {
     color: #fff;
 }
-nav > a{
-    padding:0 5px;
+nav > a {
+    padding: 0 5px;
     font-weight: 500;
     vertical-align: middle;
 }
 nav > a:hover {
-    color: var(--Toquoise-green);    
+    color: var(--Toquoise-green);
 }
 .name {
     color: var(--Light-gray);
